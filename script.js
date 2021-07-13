@@ -74,7 +74,7 @@ function login(){
     var email = localStorage.getItem("name");
     var paswordSave = localStorage.getItem("password");
 
-    if(checkEmail == email && checkPassword == paswordSave){
+    if(checkEmail.value == email && checkPassword.value == paswordSave){
         window.location.href = "home.html"
 
     }
