@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>sign up and login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login</div>
+            <div class="title sign-up">Sign up</div>
+        </div>
+        <div class="form-container">
+            <div class="slide-control">
+                <input type="radio" name="slider" id="login"  checked>
+                <input type="radio" name="slider" id="signup"  >
+                <label for="login" class="slide login" >Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slide-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="feild">
+                        <input type="text" name="email"  id="checkEmail" placeholder="Enter Email" required>
+                    </div>
+                    <div class="feild">
+                        <input type="password" placeholder="Enter Password" id="checkPassword" name="password"  required>
+                    </div>
+                    <div class="feild">
+                        <input type="button" onclick="login()" value="login">
+                    </div>
+                    <div class="signup-link">Not a member? <a href="#">Signup Now</a></div>
+                </form>
+                <form action="#" class="signup">
+                    <div class="feild">
+                        <input type="text" value="" name="email" id="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="feild">
+                        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                    </div>
+                    <div class="feild">
+                        <input type="password" placeholder="Confirm Password" name="password" id="confirmpassword" required>
+                    </div>
+                    <div class="feild">
+                        <input type="button" value="Signup"  onclick="signup()">
+                    </div>
+                 
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <Script src="script.js"> </Script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppin',sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #0099cc 0%, #666699 100%);
+}
+.home{
+    width: 50%;
+}
+.wrapper{
+    max-width: 390px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0, 0,0, 0.1);
+    overflow: hidden;
+}
+.wrapper .title-text {
+
+    display: flex;
+    width: 200%;
+    
+
+}
+.title {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.form-container {
+    width: 100%;
+    overflow: hidden;
+}
+.form-container .slide-control{
+    display: flex;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.slide-control .slide {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+
+.slide-control .signup{
+    color: #000;
+}
+.slide-control .slide-tab{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+    background: linear-gradient(to bottom, #0099cc 0%, #666699 100%);
+    border-radius: 5px;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+
+}
+input[type="radio"]{
+    display: none;
+}
+#signup:checked ~ .slide-tab {
+    left: 50%;
+}
+#signup:checked ~ .signup {
+    color: #fff;
+}
+#signup:checked ~ .login {
+    color: #000;
+}
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+.form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.form-inner form .feild{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-inner form .feild input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    transition: all 0.4s ease;
+}
+.form-inner form .feild input:focus{
+    border-color: #666699;
+
+}
+.form-inner form .signup-link{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.form-inner form .signup-link a {
+    color: #0099cc;
+    text-decoration: none;
+}
+.form-inner form .signup-link a:hover{
+    text-decoration: underline;
+}
+form .feild input[type="button"]{
+    color: #fff;
+    background: linear-gradient(to bottom, #0099cc 0%, #666699 100%);
+    font-size: 20px;
+    font-weight: 500px;
+    padding-left: 0px;
+    border: none;
+}
+.home .feild {
+    color: #fff;
+    background: lightseagreen;
+    font-size: 20px;
+    font-weight: 500px;
+    padding-left: 0px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}   
+
